@@ -2,6 +2,7 @@
 
 .container {
 	width: 100%;
+	min-height: 9rem;
 	padding: 1rem;
 }
 
@@ -12,6 +13,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	margin: 0 auto;
 
 	.title {
 		font-family: Lato, Nunito, sans-serif;
