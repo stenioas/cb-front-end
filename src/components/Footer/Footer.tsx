@@ -1,3 +1,6 @@
+// PENDENTES
+// Corrigir bug de resposividade no colapso do endereço
+
 import styles from "./Footer.module.scss";
 
 import imgCorebiz from "../../assets/corebiz-logo.svg";
