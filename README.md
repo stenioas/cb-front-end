@@ -2,8 +2,8 @@
 
 ## Índice
 
-<a href="#technologies">Tecnologias</a>
-<a href="#run">Como executar</a>
+<a href="#technologies">Tecnologias</a><br/>
+<a href="#run">Como executar</a><br/>
 <a href="#author">Autor</a>
 
 <h6 id="technologies">
