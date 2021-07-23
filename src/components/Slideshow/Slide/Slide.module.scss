@@ -1,0 +1,57 @@
+@import "../../../styles/variables.scss";
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 430px;
+
+	display: flex;
+	justify-content: center;
+
+	.wrapper {
+		position: absolute;
+		width: 100%;
+		max-width: 1200px;
+		height: 100%;
+		display: flex;
+
+		margin: 0 auto;
+		padding: 2rem;
+
+		p {
+			font-size: 2rem;
+			font-weight: 700;
+			color: $color-bg-second;
+
+			margin: auto 0;
+
+			span {
+				font-size: 3rem;
+				font-weight: 900;
+			}
+		}
+	}
+
+	img {
+		float: left;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 720px) {
+	.container {
+		height: 200px;
+
+		.wrapper {
+			p {
+				font-size: 1.2rem;
+
+				span {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+}
