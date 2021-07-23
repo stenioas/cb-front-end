@@ -46,12 +46,17 @@
 			height: 3rem;
 			border: none;
 			border-radius: 5px;
+			outline: none;
 
 			font-size: 1rem;
 			font-family: Lato, Nunito, sans-serif;
 			color: $color-font;
 
 			padding-left: 1rem;
+
+			&:focus {
+				border: 1px solid $color-graylight;
+			}
 
 			&::placeholder {
 				font-size: 1rem;
