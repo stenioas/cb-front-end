@@ -1,20 +1,10 @@
 # cb-front-end
 
-## Índice
-
-<a href="#technologies">Tecnologias</a><br/>
-<a href="#run">Como executar</a><br/>
-<a href="#author">Autor</a>
-
-<h6 id="technologies">
-
 ## :zap: Tecnologias
 
 - ReactJS
 - TypeScript
 - SASS Modules
-
-<h6 id="run">
 
 ## :mag: Como executar
 
@@ -44,8 +34,6 @@ http://localhost:3000
 ```
 
 ---
-
-<h6 id="author">
 
 ## 👨‍💻 Autor
 
