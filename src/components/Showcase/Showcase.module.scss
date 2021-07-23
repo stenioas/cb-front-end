@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: $color-bg-second;
+	padding: 1.5rem 1rem;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-size: 1.3rem;
+	font-weight: 900;
+}
+
+.line {
+	width: 4rem;
+	height: 0.4rem;
+	background-color: $color-graylight;
+
+	margin-top: 1rem;
+}
+
+.products {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
