@@ -1,3 +1,10 @@
+// PENDENTES
+// Implementar menu expansível
+// Implementar SearchBar
+// Ajustar responsividade e ordem dos elementos
+
+import useCart from "../../hooks/useCart";
+
 import imgLogo from "../../assets/logo.svg";
 import imgMenu from "../../assets/menu.svg";
 import imgMag from "../../assets/mag-glass.svg";
@@ -7,8 +14,10 @@ import imgCart from "../../assets/cart.svg";
 import styles from "./Header.module.scss";
 
 export default function Header() {
+	const { cartCounter } = useCart();
+
 	return (
-		<header>
+		<header className={styles.container}>
 			<div className={styles.wrapper}>
 				<div className={styles.menu}>
 					<img src={imgMenu} alt="Menu" />
@@ -28,7 +37,7 @@ export default function Header() {
 				</div>
 				<div className={styles.cartBox}>
 					<img src={imgCart} alt="Carrinho" />
-					<div className={styles.cartCounter}>1</div>
+					<div className={styles.cartCounter}>{cartCounter}</div>
 				</div>
 			</div>
 		</header>
