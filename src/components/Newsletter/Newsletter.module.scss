@@ -75,7 +75,7 @@
 
 	button[type="submit"],
 	[type="button"] {
-		width: 33%;
+		flex: 1;
 		height: 3rem;
 
 		font-family: Lato, Nunito, sans-serif;
@@ -144,6 +144,7 @@
 		button[type="submit"],
 		[type="button"] {
 			width: 100%;
+			flex: inherit;
 		}
 	}
 }
