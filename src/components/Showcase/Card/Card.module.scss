@@ -12,8 +12,44 @@
 		width: 100%;
 	}
 
+	&:hover .details {
+		background-color: $color-bg;
+	}
+}
+
+.details {
+	width: 100%;
+	height: 100%;
+	min-height: 10rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+
+	h4 {
+		font-size: 0.75rem;
+		font-weight: 600;
+		color: $color-font-third;
+	}
+
+	.listPrice {
+		font-size: 0.75rem;
+		color: $color-font-third;
+	}
+
+	.price {
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: $color-font;
+	}
+
+	.installments {
+		font-size: 0.7rem;
+		color: $color-font-third;
+	}
+
 	button {
-		visibility: hidden;
 		width: 8rem;
 		height: 2rem;
 
@@ -26,12 +62,6 @@
 		background-color: $color-font;
 
 		margin-top: 0.5rem;
-	}
-
-	&:hover {
-		button {
-			visibility: visible;
-		}
 	}
 }
 
