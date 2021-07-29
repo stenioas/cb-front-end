@@ -33,7 +33,7 @@ type TypeForm = string;
 type StateForm = string | null;
 
 const useForm = (type: TypeForm): any => {
-	const [value, setValue] = React.useState<StateForm>("");
+	const [value, setvalue] = React.useState<StateForm>("");
 	const [error, setError] = React.useState<StateForm>("");
 
 	// valida o input de acordo com o tipo
@@ -54,13 +54,13 @@ const useForm = (type: TypeForm): any => {
 	type HandleChangeType = (event: React.FormEvent) => void;
 	const onChange: HandleChangeType = ({ target }) => {
 		if (error) validate((target as HTMLInputElement).value);
-		setValue((target as HTMLInputElement).value);
+		setvalue((target as HTMLInputElement).value);
 	};
 
 	// retorna as validações para o input
 	return {
 		value,
-		setValue,
+		setvalue,
 		onChange,
 		error,
 		validate: () => validate(value), // passa a validação já ativada

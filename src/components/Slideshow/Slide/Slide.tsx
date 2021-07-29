@@ -9,7 +9,7 @@ export default function Slide() {
 			<img src={imgSlide} alt="Imagem de slide" />
 			<div className={styles.wrapper}>
 				<p>
-					Olá, oque está buscando?
+					Olá, o que está buscando?
 					<br />
 					<span>
 						Criar ou Migrar

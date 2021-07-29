@@ -1,5 +1,5 @@
-// PENDENTE
-// Implementar slides diferentes
+// IMPLEMENTAR
+// Slides diferentes
 
 import Slider from "react-slick";
 
@@ -10,17 +10,22 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function Slideshow() {
-	const sliderSettings = {
+	const settings = {
 		dots: true,
 		infinite: true,
-		speed: 500,
+		speed: 1000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		cssEase: "linear",
+		pauseOnHover: true,
+		arrows: false,
 	};
 
 	return (
 		<section className={styles.container}>
-			<Slider {...sliderSettings}>
+			<Slider {...settings}>
 				<Slide />
 				<Slide />
 				<Slide />
