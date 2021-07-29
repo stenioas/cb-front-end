@@ -1,12 +1,12 @@
 import Home from "./pages/Home";
 
-import CartProvider from "./contexts/CartContext";
+import StoreProvider from "./contexts/StoreContext";
 
 function App() {
 	return (
-		<CartProvider>
+		<StoreProvider>
 			<Home />
-		</CartProvider>
+		</StoreProvider>
 	);
 }
 
